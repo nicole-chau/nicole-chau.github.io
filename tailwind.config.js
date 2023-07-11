@@ -5,7 +5,22 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '600': '600px',
+       }
+    },
+    fontFamily: {
+      'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
+    },
+    colors: {
+      'white': '#FFFFFF',
+      'black': '#000000',
+      'powder-blue': '#A0C0D9',
+      'dark-tan': '#E3D5CA',
+      'slate-gray': '#6E86A1',
+      'charcoal': '#465260',
+    },
   },
   plugins: [],
 }
