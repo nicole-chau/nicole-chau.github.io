@@ -5,11 +5,21 @@
         @apply text-3xl font-bold mb-10 italic;
     }
     h2 {
-        @apply text-lg font-bold;
+        @apply text-xl font-bold mb-2 mt-5;
+    }
+    h3 {
+        @apply text-lg font-bold mb-2 mt-3
     }
     a {
         @apply ease-in-out duration-200 hover:text-charcoal text-slate-gray;
     }
+    ul {
+        @apply list-disc ml-4
+    }
+    li {
+        @apply pl-1
+    }
+    
   }
 
 @tailwind components;

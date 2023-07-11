@@ -12,6 +12,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
+      'serif': ['Times New Roman', 'ui-serif', 'system-ui']
     },
     colors: {
       'white': '#FFFFFF',
