@@ -10,11 +10,14 @@ const PathTracer = () => {
         <div class="py-16 px-80">
             <h1 class="float-left">Monte Carlo Path Tracer</h1>
 
-            <div class="float-right">
+            <div class="float-right mb-5">
                 <p class="text-right">Created in 2022</p>
             </div>
 
-            <img src={custom1} class="w-2/3 m-auto"/>
+            <figure class="inline-block w-full m-auto">
+                <img src={custom1} alt="custom scene render 1" class="m-auto w-1/2 clear-both"/>
+                <figcaption class="text-center my-2 italic">Custom scene rendered with full light integrator; 600 x 600 px, 400 samples/pixel, max 5 recursions</figcaption>
+            </figure>
 
             <div class="mb-3">
                 {skills.map(skill => (<Tag tag={skill}/>))}
