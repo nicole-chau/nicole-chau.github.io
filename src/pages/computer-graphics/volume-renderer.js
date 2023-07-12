@@ -8,9 +8,9 @@ const VolumeRenderer = () => {
 
     return (
         <div class="py-16 px-80">
-            <h1 class="float-left">Volume Renderer for Medical Imaging</h1>
+            <h1 class="float-left inline">Volume Renderer for Medical Imaging</h1>
 
-            <div class="float-right">
+            <div class="float-right inline">
                 <p class="text-right">Created in 2023</p>
                 <a 
                     href="https://github.com/nicole-chau/volume-renderer" 
@@ -19,12 +19,10 @@ const VolumeRenderer = () => {
                 </a>
             </div>
 
-            {/* <iframe src="https://player.vimeo.com/video/844289996?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1247" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Volume Renderer for Medical Imaging"></iframe> */}
-
-            <div class="relative pb-[56.25%] h-0 overflow-hidden">
+            <div class="relative pb-[50%] mt-[80px]">
                 <iframe src="https://player.vimeo.com/video/844289996" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                 
-            <div class="mb-3">
+            <div class="mb-3 mt-3">
                 {skills.map(skill => (<Tag tag={skill}/>))}
             </div>
             
