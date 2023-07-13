@@ -7,6 +7,7 @@ import pathTracer from "../../images/computer-graphics/path-tracer.png"
 import faceSwap from "../../images/computer-graphics/face-swap.png"
 import meshEditor from "../../images/computer-graphics/mesh-editor.png"
 import gpuPathTracer from "../../images/computer-graphics/gpu-path-tracer.png"
+import beatTheIllusion from "../../images/computer-graphics/beat-the-illusion.png"
 
 
 const ComputerGraphics = () => {
@@ -31,6 +32,10 @@ const ComputerGraphics = () => {
                     title="Face Swapping in Videos" 
                     image={faceSwap}
                     page="/computer-graphics/face-swap"/>
+                <Card 
+                    title="'Beat the Illusion' Game" 
+                    image={beatTheIllusion}
+                    page="/computer-graphics/beat-the-illusion"/>
                 <Card 
                     title="Mini 3D Mesh Editor" 
                     image={meshEditor}
