@@ -1,6 +1,6 @@
 import React from "react";
 import Tag from "../../components/Tag";
-import grayscale from "../../images/computer-graphics/volume-renderer.png"
+import grayscale from "../../images/computer-graphics/volume-renderer-grayscale.png"
 import rgb from "../../images/computer-graphics/volume-renderer-rgb.png"
 
 const VolumeRenderer = () => {

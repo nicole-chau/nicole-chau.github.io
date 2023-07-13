@@ -1,15 +1,15 @@
 import React from "react";
 import Card from "../../components/Card";
-import volumeRenderer from "../../images/computer-graphics/volume-renderer-rgb.png"
-import pathTracer from "../../images/computer-graphics/path-tracer1.png"
-import faceSwap from "../../images/computer-graphics/face-swap.gif"
-import meshEditor from "../../images/computer-graphics/mesh-editor.gif"
-import gpuPathTracer from "../../images/computer-graphics/gpu-path-tracer.gif"
+import volumeRenderer from "../../images/computer-graphics/volume-renderer.png"
+import pathTracer from "../../images/computer-graphics/path-tracer.png"
+import faceSwap from "../../images/computer-graphics/face-swap.png"
+import meshEditor from "../../images/computer-graphics/mesh-editor.png"
+import gpuPathTracer from "../../images/computer-graphics/gpu-path-tracer.png"
 
 
 const ComputerGraphics = () => {
     return (
-        <div class="p-16">
+        <div class="py-16 px-36">
             <h1>computer graphics</h1>
             <div class="flex flex-wrap justify-items-start justify-center">
                 <Card
@@ -21,6 +21,10 @@ const ComputerGraphics = () => {
                     image={pathTracer}
                     page="/computer-graphics/path-tracer"/>
                 <Card 
+                    title="GPU-based Path Tracer" 
+                    image={gpuPathTracer}
+                    page="/computer-graphics/gpu-path-tracer"/>
+                <Card 
                     title="Face Swapping in Videos" 
                     image={faceSwap}
                     page="/computer-graphics/face-swap"/>
@@ -28,10 +32,7 @@ const ComputerGraphics = () => {
                     title="Mini 3D Mesh Editor" 
                     image={meshEditor}
                     page="/computer-graphics/mesh-editor"/>
-                <Card 
-                    title="GPU-based Path Tracer" 
-                    image={gpuPathTracer}
-                    page="/computer-graphics/gpu-path-tracer"/>
+                
             </div>
         </div>
     )

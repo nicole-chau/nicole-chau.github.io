@@ -4,11 +4,15 @@ import { Link } from "gatsby-link";
 
 const Card = ({ title, image, page }) => {
     return (
-        <Link to={page} class="ease-in-out duration-200 shadow-md hover:shadow-lg rounded-lg p-4 w-80 mx-5 my-3 h-fit">
-            <img src={image} />            
-            {/* class="max-w-full w-auto m-auto" */}
-            <p class="text-md text-black hover:text-black text-center mt-3">{title}</p>
-        </Link>
+        <div class="w-[350px] h-[250px] mx-4 my-8">
+            <Link to={page} class="">
+                {/* <div class="max-w-full max-h-full w-auto h-auto m-auto"> */}
+                    <img src={image} class="max-w-full max-h-full ease-in-out duration-200 hover:scale-[1.02]"/>            
+                {/* </div> */}
+            </Link>
+            <p class="text-md text-black hover:text-black text-center -mt-3">{title}</p>
+        </div>
+
     )
 }
 
