@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "../../components/Card";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import volumeRenderer from "../../images/computer-graphics/volume-renderer.png"
 import pathTracer from "../../images/computer-graphics/path-tracer.png"
 import faceSwap from "../../images/computer-graphics/face-swap.png"
@@ -9,8 +11,9 @@ import gpuPathTracer from "../../images/computer-graphics/gpu-path-tracer.png"
 
 const ComputerGraphics = () => {
     return (
-        <div class="py-16 px-36">
-            <h1>computer graphics</h1>
+        <div>
+            <Navbar/>
+            <h1 class="pt-16 px-36">computer graphics</h1>
             <div class="flex flex-wrap justify-items-start justify-center">
                 <Card
                     title="Volume Renderer for Medical Imaging" 
@@ -32,8 +35,9 @@ const ComputerGraphics = () => {
                     title="Mini 3D Mesh Editor" 
                     image={meshEditor}
                     page="/computer-graphics/mesh-editor"/>
-                
             </div>
+
+            <Footer />
         </div>
     )
 }

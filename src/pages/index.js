@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import background from "../images/home.png"
 import profile from "../images/profile.jpg"
 
@@ -27,6 +28,7 @@ const creativeSkills = ["Adobe Creative Suite", "Autodesk Maya", "Blender", "Uni
 const IndexPage = () => {
   return (
     <div>
+        <Navbar/>
         <img src={background} alt="home page background" class="float-left h-[100vh] absolute -z-10"/>
         <div class="float-left absolute top-[30%] pl-20">
           <h1 class="text-white">hey, i'm nicole!</h1>
@@ -86,5 +88,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-export const Head = () => <title>Home Page</title>
