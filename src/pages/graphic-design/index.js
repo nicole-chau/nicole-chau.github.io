@@ -4,6 +4,9 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import pcvCard from "../../images/graphic-design/card-pcv.png"
 import pcv from "../../images/graphic-design/pcv-logo.png"
+import voiCard from "../../images/graphic-design/card-voi.png"
+import voiProgram from "../../images/graphic-design/voi-program.jpg"
+import voiPoster from "../../images/graphic-design/voi-poster.png"
 
 
 const GraphicDesign = () => {
@@ -17,7 +20,13 @@ const GraphicDesign = () => {
                     image={pcvCard}
                     skills={["Adobe Illustrator"]}
                     description="Penn Climate Ventures Logo Design"
-                    displayImg={pcv}/>
+                    displayImg={[pcv]}/>
+                <Card
+                    title="'Village of Idiots' Poster and Program Design" 
+                    image={voiCard}
+                    skills={["Adobe Illustrator", "Adobe Indesign"]}
+                    description="'Village of Idiots' Poster and Program Design"
+                    displayImg={[voiPoster, voiProgram]}/>
             </div>
 
             <Footer />
