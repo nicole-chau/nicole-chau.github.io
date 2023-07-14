@@ -1,7 +1,7 @@
 import React from "react";
 
 const Navbar = () => {
-    const linkStyle = "block py-2 pl-3 pr-4 md:bg-gray text-black hover:text-powder-blue md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent";
+    const linkStyle = "block py-2 pl-3 pr-4 text-black hover:text-powder-blue md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent";
     return (
         <nav class="absolute right-0 px-8">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
@@ -22,6 +22,9 @@ const Navbar = () => {
                         </li>
                         <li>
                         <a href="/computer-graphics" class={linkStyle}>computer graphics</a>
+                        </li>
+                        <li>
+                        <a href="/graphic-design" class={linkStyle}>graphic design</a>
                         </li>
                     </ul>
                 </div>

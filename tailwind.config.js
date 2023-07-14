@@ -21,6 +21,7 @@ module.exports = {
       'dark-tan': '#E3D5CA',
       'slate-gray': '#6E86A1',
       'charcoal': '#465260',
+      'gray': '#CCCCCC'
     },
   },
   plugins: [],
