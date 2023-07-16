@@ -4,8 +4,10 @@ import { Link } from "gatsby-link";
 import Tag from "./Tag";
 
 
-const Card = ({ title, image, page, skills, description, displayImg}) => {
+const Card = ({ image, title, page, year, link, skills, subtitle, video, modalImgs, description}) => {
     const [showModal, setShowModal] = useState(false);
+
+    console.log({description})
 
     return (
         <div class="w-[350px] h-[250px] mx-4 my-9">
@@ -23,16 +25,38 @@ const Card = ({ title, image, page, skills, description, displayImg}) => {
             {showModal
             && (
                 <div class="flex justify-center items-center bg-gray bg-opacity-75 absolute min-h-[100vh] min-w-[100vw] top-0 left-0">
-                    <div class="bg-white p-5 rounded-lg shadow-xl w-[50%] max-h-[80vh] overflow-auto">
-                        <button type="button" class=" text-2xl -mt-3 text-charcoal float-right" onClick={() => setShowModal(false)}>×</button>
-                        <p class="font-bold text-lg">{title}</p>
-                        <p class="text-sm">{description}</p>
-                        <div class="">
-                            {skills.map(skill => (<Tag tag={skill}/>))}
+                    <div class="bg-white p-6 rounded-lg shadow-xl w-[60%] max-h-[90vh] overflow-auto">
+                        <button type="button" class="text-2xl text-charcoal float-right relative -right-3 -top-5" onClick={() => setShowModal(false)}>×</button>
+                        
+                        <div class="float-left inline">
+                            <p class="font-bold text-xl">{title}</p>
+                            <p class="text-sm">{subtitle}</p>
+                            <div class="mb-3">
+                                {skills.map(skill => (<Tag tag={skill}/>))}
+                            </div>
                         </div>
 
-                        {displayImg.map(img => (<img src={img} class="px-8 py-4 w-fit m-auto"/>))}
-                        
+                        <div class="float-right inline text-right">
+                            {year && <p class="text-right">Created in {year}</p>}
+                            {link && 
+                            <a 
+                                href={link}
+                                class="bg-powder-blue text-white px-2.5 py-1 my-2 inline-block rounded-md hover:bg-slate-gray hover:text-white">
+                                    View code
+                            </a>}
+                        </div>
+
+     
+                        {modalImgs && modalImgs.map(img => (<img src={img} class="px-8 py-4 max-w-[85%] m-auto clear-both"/>))}
+
+                        {video && 
+                        <>
+                            <div class="relative pb-[50%] mt-2 clear-both">
+                                <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        </>
+                        }
+
+                        {description}        
                     </div>
                 </div>
             )}
