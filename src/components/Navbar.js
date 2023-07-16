@@ -24,7 +24,7 @@ const Navbar = () => {
                         <a href="/computer-graphics" class={linkStyle}>computer graphics</a>
                         </li>
                         <li>
-                        <a href="/graphic-design" class={linkStyle}>graphic design</a>
+                        <a href="/design" class={linkStyle}>design</a>
                         </li>
                     </ul>
                 </div>

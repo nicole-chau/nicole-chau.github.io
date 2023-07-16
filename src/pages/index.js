@@ -15,8 +15,8 @@ const links = [
         url: "",
     },
     {
-        text: "graphic design",
-        url: "",
+        text: "design",
+        url: "/design",
     }
 ]
 

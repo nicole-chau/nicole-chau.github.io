@@ -22,15 +22,16 @@ const Card = ({ title, image, page, skills, description, displayImg}) => {
 
             {showModal
             && (
-                <div class="flex justify-center items-center bg-gray bg-opacity-75 absolute inset-0">
+                <div class="flex justify-center items-center bg-gray bg-opacity-75 absolute min-h-[100vh] min-w-[100vw] top-0 left-0">
                     <div class="bg-white p-5 rounded-lg shadow-xl w-[50%] max-h-[80vh] overflow-auto">
-                        <button type="button" class="float-right text-2xl -mt-3 text-charcoal" onClick={() => setShowModal(false)}>×</button>
-                        <p class="font-bold text-lg">{description}</p>
+                        <button type="button" class=" text-2xl -mt-3 text-charcoal float-right" onClick={() => setShowModal(false)}>×</button>
+                        <p class="font-bold text-lg">{title}</p>
+                        <p class="text-sm">{description}</p>
                         <div class="">
                             {skills.map(skill => (<Tag tag={skill}/>))}
                         </div>
 
-                        {displayImg.map(img => (<img src={img} class="p-8 w-fit m-auto"/>))}
+                        {displayImg.map(img => (<img src={img} class="px-8 py-4 w-fit m-auto"/>))}
                         
                     </div>
                 </div>
