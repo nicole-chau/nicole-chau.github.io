@@ -37,48 +37,48 @@ const Design = () => {
             <h1 class="pt-16 px-36">design</h1>
             <div class="flex flex-wrap justify-items-start justify-center">
                 <Card
-                    title="Penn Climate Ventures Logo Design" 
                     image={pcvCard}
+                    title="Penn Climate Ventures Logo Design" 
                     skills={["Adobe Illustrator"]}
-                    description="Designed as the Head of Design for Penn Climate Ventures."
-                    displayImg={[pcv]}/>
+                    subtitle="Designed as the Head of Design for Penn Climate Ventures."
+                    modalImgs={[pcv]}/>
                 <Card
-                    title="Penn Climate Ventures General Website Design" 
                     image={generalCard}
+                    title="Penn Climate Ventures General Website Design"           
                     skills={["Figma"]}
-                    description={<>View the Figma file <a target="_blank" href="https://www.figma.com/file/VHarLpDtEqM6j4KC6LFZeN/PCV-General-Website-Design?type=design&node-id=0%3A1&mode=design&t=7o044DXm6FZGmJGq-1" >
+                    subtitle={<>View the Figma file <a target="_blank" href="https://www.figma.com/file/VHarLpDtEqM6j4KC6LFZeN/PCV-General-Website-Design?type=design&node-id=0%3A1&mode=design&t=7o044DXm6FZGmJGq-1" >
                         here</a>.</>}
-                    displayImg={[general, about, people, fellowships]}/>
+                    modalImgs={[general, about, people, fellowships]}/>
                 <Card
-                    title="Penn Climate Ventures Ideathon Website Design" 
                     image={ideathonCard}
+                    title="Penn Climate Ventures Ideathon Website Design" 
                     skills={["Figma"]}
-                    description={<>View the figma file <a target="_blank" href="https://www.figma.com/file/Lc4SznHXvOh0r19HGmY4mJ/PCV-Ideathon%2FPrize-Home-Page-Design?type=design&node-id=0%3A1&mode=design&t=F5wXxeJfx2cdtp1e-1">
+                    subtitle={<>View the figma file <a target="_blank" href="https://www.figma.com/file/Lc4SznHXvOh0r19HGmY4mJ/PCV-Ideathon%2FPrize-Home-Page-Design?type=design&node-id=0%3A1&mode=design&t=F5wXxeJfx2cdtp1e-1">
                         here</a> and the website <a target="_blank" href="https://ideathon.pennclimateventures.org/">
                         here</a>.</>}
-                    displayImg={[ideathon]}/>
+                    modalImgs={[ideathon]}/>
                 <Card
-                    title="PennApps Logo and Banner Designs" 
                     image={pennappsLogoCard}
+                    title="PennApps Logo and Banner Designs" 
                     skills={["Adobe Illustrator"]}
-                    description="Logo and banner designs for various iterations of the University of Pennsylvania's collegiate hackathon, each corresponding to a different theme (cloud, spring, sustainability). Designed as part of the PennApps creative team."
-                    displayImg={[pennappsCloud, pennappsSpring, pennappsSustainability]}/>
+                    subtitle="Logo and banner designs for various iterations of the University of Pennsylvania's collegiate hackathon, each corresponding to a different theme (cloud, spring, sustainability). Designed as part of the PennApps creative team."
+                    modalImgs={[pennappsCloud, pennappsSpring, pennappsSustainability]}/>
                 <Card
-                    title="PennApps Mascot Designs" 
                     image={pennappsPlatyCard}
+                    title="PennApps Mascot Designs" 
                     skills={["Adobe Illustrator"]}
-                    description="Designed variations of the PennApps mascot to match the current iteration's theme (music, sustainability)."
-                    displayImg={[pennappsPlatyTriangle, pennappsPlatyLeaves]}/>
+                    subtitle="Designed variations of the PennApps mascot to match the current iteration's theme (music, sustainability)."
+                    modalImgs={[pennappsPlatyTriangle, pennappsPlatyLeaves]}/>
                 <Card
-                    title="'Village of Idiots' Poster and Program Design" 
                     image={voiCard}
+                    title="'Village of Idiots' Poster and Program Design" 
                     skills={["Adobe Illustrator", "Adobe Indesign"]}
-                    displayImg={[voiPoster, voiProgram]}/>
+                    modalImgs={[voiPoster, voiProgram]}/>
                 <Card
-                    title="Media Team Logo Design" 
                     image={mtLogoCard}
+                    title="Media Team Logo Design" 
                     skills={["Adobe Illustrator"]}
-                    displayImg={[mtLogo]}/>
+                    modalImgs={[mtLogo]}/>
             </div>
 
             <Footer />
