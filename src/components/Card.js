@@ -24,7 +24,7 @@ const Card = ({ image, title, page, year, link, skills, subtitle, video, modalIm
 
             {showModal
             && (
-                <div class="flex justify-center items-center bg-gray bg-opacity-75 absolute min-h-[100vh] min-w-[100vw] top-0 left-0">
+                <div class="flex justify-center items-center bg-gray bg-opacity-75 absolute min-h-[100vh] min-w-[100vw] top-0 left-0 z-20">
                     <div class="bg-white p-6 rounded-lg shadow-xl w-[60%] max-h-[90vh] overflow-auto">
                         <button type="button" class="text-2xl text-charcoal float-right relative -right-3 -top-5" onClick={() => setShowModal(false)}>×</button>
                         

@@ -21,8 +21,8 @@ const ComputerGraphics = () => {
     return (
         <div>
             <Navbar/>
-            <h1 class="pt-16 px-36">computer graphics</h1>
-            <div class="flex flex-wrap justify-items-start justify-center">
+            <h1 class="pt-16 px-48">computer graphics</h1>
+            <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={volumeRenderer}
                     title="Volume Renderer for Medical Imaging" 

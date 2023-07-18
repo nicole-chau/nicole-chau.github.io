@@ -34,7 +34,7 @@ const Design = () => {
     return (
         <div>
             <Navbar/>
-            <h1 class="pt-16 px-36">design</h1>
+            <h1 class="pt-16 px-48">design</h1>
             <div class="flex flex-wrap justify-items-start justify-center">
                 <Card
                     image={pcvCard}

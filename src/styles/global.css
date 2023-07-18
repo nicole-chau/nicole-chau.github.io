@@ -2,7 +2,7 @@
 
 @layer base {
     h1 {
-        @apply text-3xl font-bold mb-10 italic;
+        @apply text-3xl font-bold italic;
     }
     h2 {
         @apply text-xl font-bold mb-2 mt-5;
