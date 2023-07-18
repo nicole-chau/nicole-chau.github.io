@@ -31,7 +31,13 @@ const WebDev = () => {
                     title="Tinder for Movies" 
                     skills={["React", "Node.js", "Express", "MySQL"]}
                     subtitle="A Tinder-like web app that allows users to swipe through and save movies."
-                    modalImgs={[signIn, trending, browse, swipe, liked, info]}/>
+                    modalImgs={[signIn, trending, browse, swipe, liked, info]}
+                    description="
+                        This is a Tinder-like web app that allows users to swipe through and save movies. 
+                        The movie data is joined from the IMDb dataset and Kaggle movie dataset, and additional information was scraped using Python and fetched from the TMDB API.
+                        Users can browse through trending movies or swipe through a list of movies recommended to them based on their existing liked movies. 
+                        This project was completed in collaboration with three other people."
+                    descriptionFirst={true}/>
                 <Card
                     image={pcvIdeathon}
                     title="Penn Climate Ventures Ideathon Website" 
@@ -43,7 +49,9 @@ const WebDev = () => {
                     title="Collaborative Image Editor" 
                     skills={["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]}
                     subtitle="Upload and edit images in collaboration with other users."
-                    modalImgs={[logIn, images, upload, edit, shared]}/>
+                    modalImgs={[logIn, images, upload, edit, shared]}
+                    description=""
+                    descriptionFirst={true}/>
             </div>
             <Footer />
         </div>

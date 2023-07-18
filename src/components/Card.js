@@ -4,7 +4,7 @@ import { Link } from "gatsby-link";
 import Tag from "./Tag";
 
 
-const Card = ({ image, title, page, year, link, skills, subtitle, video, modalImgs, description}) => {
+const Card = ({ image, title, page, year, link, skills, subtitle, video, modalImgs, description, descriptionFirst }) => {
     const [showModal, setShowModal] = useState(false);
 
     console.log({description})
@@ -46,17 +46,29 @@ const Card = ({ image, title, page, year, link, skills, subtitle, video, modalIm
                             </a>}
                         </div>
 
-     
-                        {modalImgs && modalImgs.map(img => (<img src={img} class="px-8 py-4 max-w-[85%] m-auto clear-both"/>))}
+                        {descriptionFirst ? 
+                            <>
+                                <div class="clear-both">{description} </div>
 
-                        {video && 
-                        <>
-                            <div class="relative pb-[50%] mt-2 clear-both">
-                                <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                        </>
+                                {modalImgs && modalImgs.map(img => (<img src={img} class="px-8 py-4 max-w-[85%] m-auto clear-both"/>))}
+                                {video && 
+                                <>
+                                    <div class="relative pb-[50%] mt-2 clear-both">
+                                        <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                </>}
+                            </> 
+                        :
+                            <>
+                                {modalImgs && modalImgs.map(img => (<img src={img} class="px-8 py-4 max-w-[85%] m-auto clear-both"/>))}
+                                {video && 
+                                <>
+                                    <div class="relative pb-[50%] mt-2 clear-both">
+                                        <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                </>}
+
+                                <div class="clear-both">{description} </div>
+                            </>
                         }
-
-                        {description}        
                     </div>
                 </div>
             )}
