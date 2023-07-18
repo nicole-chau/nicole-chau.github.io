@@ -35,7 +35,7 @@ const Design = () => {
         <div>
             <Navbar/>
             <h1 class="pt-16 px-48">design</h1>
-            <div class="flex flex-wrap justify-items-start justify-center">
+            <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={pcvCard}
                     title="Penn Climate Ventures Logo Design" 

@@ -43,19 +43,19 @@ const VolumeRendererBody = () => {
 
             <h2>Implementation Overview</h2>
 
-            This was implemented using Qt and C++.
+            <p>This was implemented using Qt and C++.</p>
 
             <h3>Data Loading and Processing</h3>
 
-            The application allows a user to load in a series of DICOM images. Once the directory is selected, the file tags are then parsed to identify the width, height, rescale intercept and rescale slope values. For each file, the raw pixel values are read and converted to Hounsfield units (HU) with the following formula :
+            <p>The application allows a user to load in a series of DICOM images. Once the directory is selected, the file tags are then parsed to identify the width, height, rescale intercept and rescale slope values. For each file, the raw pixel values are read and converted to Hounsfield units (HU) with the following formula :</p>
 
             <p class="text-center font-serif my-2">HU = pixelValue * rescaleSlope + rescaleIntercept</p>
-            Note that Hounsfield units are a relative quantitative measurement of radio density used in CT scans.
+            <p>Note that Hounsfield units are a relative quantitative measurement of radio density used in CT scans.</p>
 
             <h3>Volume Rendering</h3>
 
-            The volume rendering is implemented through a ray-cast approach. For each pixel on the screen, a ray is cast from the camera origin to the pixel and through the voxel data. If the ray intersects the data volume, then the data is sampled along the ray with grid marching. For each sample, the transmittance <p class="font-serif inline">T </p>
-            and color <p class="font-serif inline">C</p> is updated based on the density (calculated from Hounsfield unit) and color at the current voxel. If the data is to be rendered using a RGB color map, then voxels with Hounsfield unit values falling within the selected range will be linearly interpolated between five predefined colors (yellow to red) to obtain the voxel color.
+            <p>The volume rendering is implemented through a ray-cast approach. For each pixel on the screen, a ray is cast from the camera origin to the pixel and through the voxel data. If the ray intersects the data volume, then the data is sampled along the ray with grid marching. For each sample, the transmittance <p class="font-serif inline">T </p>
+            and color <p class="font-serif inline">C</p> is updated based on the density (calculated from Hounsfield unit) and color at the current voxel. If the data is to be rendered using a RGB color map, then voxels with Hounsfield unit values falling within the selected range will be linearly interpolated between five predefined colors (yellow to red) to obtain the voxel color.</p>
 
             <h2>Third Party Libraries Used</h2>
             <ul>

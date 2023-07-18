@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import background from "../images/home.png"
-import backgroundMobile from "../images/home-mobile.png"
+import Tag from "../components/Tag";
 import profile from "../images/profile.jpg"
 
 const svgStyle = "scale-75 mx-1 tablet-sm:scale-[0.8] md:scale-100 md:mx-2 inline-block hover:scale-110 ease-in-out duration-200";
@@ -30,8 +29,6 @@ const IndexPage = () => {
   return (
     <div>
         <Navbar/>
-        {/* <img src={backgroundMobile} alt="home page background" class="sm:invisible visible absolute -z-10"/> */}
-        {/* <img src={background} alt="home page background" class="invisible fixed -z-10 sm:visible sm:min-h-[768px] sm:min-w-full md:min-w-0 md:min-h-0 rotate-90 h-[100vw] md:rotate-0 md:float-left md:h-[100vh]"/> */}
         <div class="bg-cover bg-no-repeat h-[70vh] bg-bottom sm:h-[45vh] md:w-[450px] md:h-[100vh] md:bg-right bg-[url('../images/home-mobile.png')] sm:bg-[url('../images/home-tablet.png')] md:bg-[url('../images/home.png')]">
 
           <div class="pt-8 px-2 tablet-sm:px-28 min-[486px]:px-20 min-[436px]:px-16 sm:px-12 md:float-left md:absolute md:top-[16%] md:pl-20">
@@ -102,14 +99,14 @@ const IndexPage = () => {
           technical skills
         </p>
         {technicalSkills.map(skill => (
-            <p class="text-sm md:text-base bg-dark-tan rounded-md inline-block px-2.5 py-1 mr-3 my-1 text-white hover:text-white">{skill}</p>
+            <Tag tag={skill}/>
         ))}
 
         <p class="md:text-xl mt-6 md:mt-10 mb-4 font-bold italic text-charcoal">
           creative skills
         </p>
         {creativeSkills.map(skill => (
-            <p class="text-sm md:text-base bg-dark-tan rounded-md inline-block px-2.5 py-1 mr-3 my-1 text-white hover:text-white">{skill}</p>
+            <Tag tag={skill}/>
         ))}
       </div>
     </div>

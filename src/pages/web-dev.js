@@ -25,7 +25,7 @@ const WebDev = () => {
         <div>
             <Navbar/>
             <h1 class="pt-16 px-48">web dev</h1>
-            <div class="flex flex-wrap justify-items-start justify-center">
+            <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={minder}
                     title="Tinder for Movies" 
