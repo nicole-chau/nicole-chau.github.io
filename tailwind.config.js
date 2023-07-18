@@ -23,6 +23,11 @@ module.exports = {
       'charcoal': '#465260',
       'gray': '#CCCCCC'
     },
+    screens: {
+      'sm': '426px',
+      'md': '769px',
+      'tablet-sm': '656px'
+    },
   },
   plugins: [],
 }

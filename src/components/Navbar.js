@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav class="absolute right-0 px-2 z-10">
             <div class="max-w-screen-xl flex flex-col justify-self-end mx-auto p-5">
-                <button type="button" onClick={() => setCollapse(!collapse)} class="ml-auto inline-flex items-center p-1 w-8 h-8 text-sm text-gray-500 rounded-lg md:hidden">
+                <button type="button" onClick={() => setCollapse(!collapse)} class="ml-auto inline-flex items-center p-1 w-6 h-6 text-sm text-gray-500 rounded-lg md:hidden">
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                     </svg>
