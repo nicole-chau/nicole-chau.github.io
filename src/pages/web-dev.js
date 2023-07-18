@@ -12,6 +12,9 @@ import liked from "../images/web-dev/minder-liked.png";
 import info from "../images/web-dev/minder-info.png";
 
 import pcvIdeathon from "../images/web-dev/card-pcv-ideathon.png";
+import home from "../images/web-dev/pcv-home.png"
+import schedule from "../images/web-dev/pcv-schedule.png"
+import faq from "../images/web-dev/pcv-faq.png"
 
 import imageEditor from "../images/web-dev/collaborative-image-editor.png";
 import logIn from "../images/web-dev/cie-log-in.png";
@@ -30,6 +33,7 @@ const WebDev = () => {
                     image={minder}
                     title="Tinder for Movies" 
                     skills={["React", "Node.js", "Express", "MySQL"]}
+                    year="2022"
                     subtitle="A Tinder-like web app that allows users to swipe through and save movies."
                     modalImgs={[signIn, trending, browse, swipe, liked, info]}
                     description="
@@ -42,15 +46,24 @@ const WebDev = () => {
                     image={pcvIdeathon}
                     title="Penn Climate Ventures Ideathon Website" 
                     skills={["React"]}
-                    subtitle="Designed and developed in collaboration with the Penn Climate Ventures team for the Ideathon event."
-                    modalImgs={[]}/>
+                    year="2021"
+                    subtitle={<>Designed and developed in collaboration with the Penn Climate Ventures team for the Ideathon event. 
+                        <br/>
+                        View the completed website <a target="_blank" href="https://ideathon.pennclimateventures.org/" >
+                        here</a>.</>}
+                    modalImgs={[home, schedule, faq]}/>
                 <Card
                     image={imageEditor}
                     title="Collaborative Image Editor" 
                     skills={["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]}
+                    year="2022"
+                    link="https://github.com/nicole-chau/collaborative-image-editor/tree/master"
                     subtitle="Upload and edit images in collaboration with other users."
                     modalImgs={[logIn, images, upload, edit, shared]}
-                    description=""
+                    description="This is a simple web-based image editor that allows users to upload, edit and share images with other users.
+                    Any shared images can be edited by any of the collaboraters, and changes will be updated for all collaboraters.
+                    Users can adjust the brightness, contrast or saturation of an image, or apply a grayscale, sepia or inverted filter. 
+                    Jimp was used to support the image editing functions."
                     descriptionFirst={true}/>
             </div>
             <Footer />
