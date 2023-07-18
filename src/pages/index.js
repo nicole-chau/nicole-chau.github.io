@@ -12,7 +12,7 @@ const links = [
     },
     {
         text: "web dev",
-        url: "",
+        url: "/web-dev",
     },
     {
         text: "design",
