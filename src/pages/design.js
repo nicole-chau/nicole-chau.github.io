@@ -1,33 +1,33 @@
 import React from "react";
-import Card from "../../components/Card";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Card from "../components/Card";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-import pcvCard from "../../images/design/card-pcv.png"
-import pcv from "../../images/design/pcv-logo.png"
-import ideathonCard from "../../images/design/card-pcv-ideathon.png"
-import generalCard from "../../images/design/card-pcv-general.png"
-import ideathon from "../../images/design/pcv-ideathon.jpg"
-import general from "../../images/design/pcv-home.jpg"
-import about from "../../images/design/pcv-about.jpg"
-import people from "../../images/design/pcv-people.jpg"
-import fellowships from "../../images/design/pcv-fellowships.jpg"
+import pcvCard from "../images/design/card-pcv.png"
+import pcv from "../images/design/pcv-logo.png"
+import ideathonCard from "../images/design/card-pcv-ideathon.png"
+import generalCard from "../images/design/card-pcv-general.png"
+import ideathon from "../images/design/pcv-ideathon.jpg"
+import general from "../images/design/pcv-home.jpg"
+import about from "../images/design/pcv-about.jpg"
+import people from "../images/design/pcv-people.jpg"
+import fellowships from "../images/design/pcv-fellowships.jpg"
 
-import voiCard from "../../images/design/card-voi.png"
-import voiProgram from "../../images/design/voi-program.jpg"
-import voiPoster from "../../images/design/voi-poster.png"
+import voiCard from "../images/design/card-voi.png"
+import voiProgram from "../images/design/voi-program.jpg"
+import voiPoster from "../images/design/voi-poster.png"
 
-import pennappsLogoCard from "../../images/design/card-pennapps-logos.png"
-import pennappsCloud from "../../images/design/pennapps-cloud.png"
-import pennappsSpring from "../../images/design/pennapps-spring.png"
-import pennappsSustainability from "../../images/design/pennapps-sustainability.png"
+import pennappsLogoCard from "../images/design/card-pennapps-logos.png"
+import pennappsCloud from "../images/design/pennapps-cloud.png"
+import pennappsSpring from "../images/design/pennapps-spring.png"
+import pennappsSustainability from "../images/design/pennapps-sustainability.png"
 
-import pennappsPlatyCard from "../../images/design/card-pennapps-platy.png"
-import pennappsPlatyTriangle from "../../images/design/platy-triangle.png"
-import pennappsPlatyLeaves from "../../images/design/platy-leaves.png"
+import pennappsPlatyCard from "../images/design/card-pennapps-platy.png"
+import pennappsPlatyTriangle from "../images/design/platy-triangle.png"
+import pennappsPlatyLeaves from "../images/design/platy-leaves.png"
 
-import mtLogoCard from "../../images/design/card-mt-logo.png"
-import mtLogo from "../../images/design/mt-logo.png"
+import mtLogoCard from "../images/design/card-mt-logo.png"
+import mtLogo from "../images/design/mt-logo.png"
 
 const Design = () => {
 
