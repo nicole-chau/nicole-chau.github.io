@@ -9,6 +9,8 @@ import meshEditor from "../../images/computer-graphics/mesh-editor.png";
 import gpuPathTracer from "../../images/computer-graphics/gpu-path-tracer.png";
 import beatTheIllusion from "../../images/computer-graphics/beat-the-illusion.png";
 import pbrShaders from "../../images/computer-graphics/pbr-shaders.png";
+import shaderCards from "../../images/computer-graphics/card-opengl-shaders.png"
+import shaderVideo from "../../images/computer-graphics/opengl-shaders.mp4"
 
 import { VolumeRendererBody } from "./volume-renderer.js";
 import { PathTracerBody } from "./path-tracer.js";
@@ -83,6 +85,42 @@ const ComputerGraphics = () => {
                     year="2022"
                     video="https://player.vimeo.com/video/845628830"
                     description={<PBRShadersBody/>}
+                    />
+                <Card 
+                    image={shaderCards}
+                    title="OpenGL Shaders" 
+                    skills={["OpenGL", "Qt"]}
+                    year="2021"
+                    description={<>
+                        <video width="1800" controls class="mb-8">
+                            <source src={shaderVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>
+                            Implementation of various surface shaders and post-process shaders in OpenGL. 
+                            <br/><br/>
+                            <ul>
+                                <li>Surface shaders
+                                    <ul>
+                                        <li>Lambert</li>
+                                        <li>Blinn-Phong</li>
+                                        <li>Matcap</li>
+                                        <li>Color gradient</li>
+                                        <li>Vertex deformation</li>
+                                    </ul>
+                                </li>
+                                <li>Post-process shaders
+                                    <ul>
+                                        <li>Grayscale</li>
+                                        <li>Gaussian blur</li>
+                                        <li>Sobel</li>
+                                        <li>Bloom</li>
+                                        <li>Worley noise</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                    </>}
                     />
             </div>
 
