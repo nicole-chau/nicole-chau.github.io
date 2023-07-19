@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [collapse, setCollapse] = useState(true)
-    const linkStyle = "block py-2 pl-3 pr-4 text-black hover:text-powder-blue md:p-0";
+    const linkStyle = "block py-2 px-2 text-black hover:text-powder-blue md:p-0";
 
     // const collapsedStyle = collapse ? 
 
@@ -16,7 +16,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 <div class={(collapse ? `hidden ` : ``) + (`md:w-full md:block md:w-auto`)} id="navbar-default">
-                    <ul class="list-none flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-white shadow md:shadow-none md:flex-row md:space-x-8 md:mt-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul class="list-none flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-white shadow md:shadow-none md:flex-row md:space-x-5 md:mt-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
                             <a href="/" class={linkStyle} aria-current="page">home</a>
                         </li>
@@ -28,6 +28,9 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a href="/design" class={linkStyle}>design</a>
+                        </li>
+                        <li>
+                            <a href="/art" class={linkStyle}>art</a>
                         </li>
                     </ul>
                 </div>

@@ -28,7 +28,7 @@ const Card = ({ image, title, page, year, link, skills, subtitle, video, modalIm
                     <div class="bg-white p-6 rounded-lg shadow-xl w-[80%] lg:w-[60%] max-h-[90vh] overflow-auto">
                         <button type="button" class="text-xl md:text-2xl text-charcoal float-right relative -right-3 -top-5" onClick={() => setShowModal(false)}>×</button>
                         
-                        <div class="md:float-left inline">
+                        <div class="md:float-left inline w-[80%]">
                             <p class="font-bold text-xl">{title}</p>
                             <p class="text-sm">{subtitle}</p>
                             <div class="md:mb-3">
