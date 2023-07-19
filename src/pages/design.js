@@ -29,6 +29,9 @@ import pennappsPlatyLeaves from "../images/design/platy-leaves.png"
 import mtLogoCard from "../images/design/card-mt-logo.png"
 import mtLogo from "../images/design/mt-logo.png"
 
+import personalCard from "../images/design/card-personal.png"
+import personal from "../images/design/personal-art.jpg"
+
 const Design = () => {
 
     return (
@@ -79,6 +82,12 @@ const Design = () => {
                     title="Media Team Logo Design" 
                     skills={["Adobe Illustrator"]}
                     modalImgs={[mtLogo]}/>
+                <Card
+                    image={personalCard}
+                    title="Abstract Designs" 
+                    subtitle="Personal artwork exploring abstract designs."
+                    skills={["Adobe Illustrator"]}
+                    description={<img src={personal} alt="cat drawing" class="px-8 m-auto clear-both"/>}/>
             </div>
 
             <Footer />
