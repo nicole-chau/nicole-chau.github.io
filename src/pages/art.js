@@ -16,6 +16,17 @@ import boatVideo from "../images/art/boat-demo.mp4"
 import boatTexture from "../images/art/boat-texture.png"
 import boatCloseup from "../images/art/boat-closeup2.png"
 
+import catCard from "../images/art/card-cat.png"
+import cat from "../images/art/cat.jpg"
+import bridgeCard from "../images/art/card-bridge.png"
+import bridge from "../images/art/bridge.jpg"
+import mountainCard from "../images/art/card-mountain.png"
+import mountain from "../images/art/mountains.jpg"
+import birdCard from "../images/art/card-bird.png"
+import bird from "../images/art/eagle.jpg"
+import cityCard from "../images/art/card-city.png"
+import city from "../images/art/city.jpg"
+
 const Art = () => {
     return (
         <div>
@@ -77,6 +88,33 @@ const Art = () => {
             
             
             <h1 id="illustrations" class="pt-16 px-48">digital illustrations</h1>
+            <div class="flex flex-wrap justify-items-start justify-center mx-8">
+                <Card
+                    image={catCard}
+                    skills={["Adobe Photoshop"]}
+                    year="2020"
+                    modalImgs={[cat]} />
+                <Card
+                    image={mountainCard}
+                    skills={["Adobe Photoshop"]}
+                    year="2021"
+                    modalImgs={[mountain]} />
+                <Card
+                    image={birdCard}
+                    skills={["Adobe Photoshop"]}
+                    year="2021"
+                    modalImgs={[bird]} />
+                <Card
+                    image={bridgeCard}
+                    skills={["Adobe Photoshop"]}
+                    year="2021"
+                    modalImgs={[bridge]} />
+                <Card
+                    image={cityCard}
+                    skills={["Adobe Photoshop"]}
+                    year="2021"
+                    modalImgs={[city]} />
+            </div>
             
             <h1 id="traditional" class="pt-16 px-48">traditional art</h1>
             <Footer />
