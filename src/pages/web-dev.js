@@ -23,6 +23,9 @@ import upload from "../images/web-dev/cie-upload.png";
 import edit from "../images/web-dev/cie-edit.png";
 import shared from "../images/web-dev/cie-shared.png";
 
+import snowflakeCard from "../images/web-dev/snowflake.png"
+import snowflakeVideo from "../images/web-dev/snowflake-demo.mp4"
+
 const WebDev = () => {
     return (
         <div>
@@ -65,6 +68,46 @@ const WebDev = () => {
                     Users can adjust the brightness, contrast or saturation of an image, or apply a grayscale, sepia or inverted filter. 
                     Jimp was used to support the image editing functions."
                     descriptionFirst={true}/>
+                <Card
+                    image={snowflakeCard}
+                    title="Snowflake Generator" 
+                    skills={["Python"]}
+                    year="2021"
+                    link="https://github.com/nicole-chau/snowflake-generator"
+                    description={
+                        <>
+                            <video width="1800" controls class="mb-8">
+                                <source src={snowflakeVideo} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>
+                            This is a flask web app that procedurally generates a snowflake design using a L-system.
+                            <br/><br/>
+                            The L-system grammar used in this project consists of the following:
+                            <ul>
+                                <li>Axiom (initial configuration)
+                                    <ul><li>Default: 'FX'</li></ul>
+                                </li>
+                                <li>Symbols that correspond to rendering/drawing instructions:
+                                    <ul>
+                                        <li>'F', 'X' : go forward</li>
+                                        <li>'-' : rotate right</li>
+                                        <li>'+' : rotate left</li>
+                                        <li>'[' : save current state (position and orientation)</li>
+                                        <li>']' : restore previous state (position and orientation)</li>
+                                        <li>'&lt;' : halve draw distance</li>
+                                        <li>'&gt;' : double draw distance</li>
+                                    </ul>
+                                </li>
+                                <li>Grammar: rules determining what symbols should appear based on different contexts (i.e. given a single symbol (precondition), replace it with a set of symbols (post condition)
+                                    <ul><li>'X' → '&lt;F[+FX][-FX]FFFF[+FX][-FX]FXF&gt;'</li></ul>
+                                </li>
+                            </ul>
+                            <br/>
+                            The drawing is created using the turtle module. The turtle's movements are defined by the generated L-system.
+                            </p>
+                        </>
+                    }/>
             </div>
             <Footer />
         </div>
