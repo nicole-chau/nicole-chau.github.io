@@ -16,6 +16,7 @@ import { GPUPathTracerBody } from "./gpu-path-tracer.js";
 import { FaceSwapBody } from "./face-swap";
 import { BeatTheIllusionBody } from "./beat-the-illusion";
 import { MeshEditorBody } from "./mesh-editor";
+import { PBRShadersBody } from "./physically-based-shaders";
 
 const ComputerGraphics = () => {
     return (
@@ -76,11 +77,12 @@ const ComputerGraphics = () => {
                     />
                 <Card 
                     image={pbrShaders}
-                    title="Physically Based Shaders" 
+                    title="Physically-Based Shaders" 
                     // page="/computer-graphics/physically-based-shaders"
                     skills={["OpenGL", "Qt"]}
                     year="2022"
                     video="https://player.vimeo.com/video/845628830"
+                    description={<PBRShadersBody/>}
                     />
             </div>
 
