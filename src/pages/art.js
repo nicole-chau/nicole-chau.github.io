@@ -11,6 +11,11 @@ import animationVideo from "../images/art/animation.mp4"
 
 import character from "../images/art/card-character.png"
 
+import boatCard from "../images/art/card-boat.png"
+import boatVideo from "../images/art/boat-demo.mp4"
+import boatTexture from "../images/art/boat-texture.png"
+import boatCloseup from "../images/art/boat-closeup2.png"
+
 const Art = () => {
     return (
         <div>
@@ -48,11 +53,26 @@ const Art = () => {
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={character}
-                    title="3D Character Model" 
+                    title="Character Model" 
                     skills={["Autodesk Maya", "Autodesk Arnold", "Adobe Photoshop"]}
                     year="2021"
                     subtitle="3D character model based on original concept art. Modeled and rendered using Autodesk Maya and Arnold with some textures created in Adobe Photoshop."
                     video="https://player.vimeo.com/video/750245073" />
+                <Card
+                    image={boatCard}
+                    title="AR Boat" 
+                    skills={["Blender"]}
+                    year="2021"
+                    subtitle="AR sculpture of a sinking boat."
+                    modalImgs={[boatTexture, boatCloseup]}
+                    description={
+                        <>
+                            <video width="1800" controls class="mb-8">
+                                <source src={boatVideo} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </>}
+                    descriptionFirst={true}/>
             </div>
             
             
