@@ -17,6 +17,22 @@ const links = [
     {
         text: "design",
         url: "/design",
+    },
+    {
+      text: "2D animation",
+      url: "/art#animation"
+    },
+    {
+      text: "3D modeling",
+      url: "/art#modeling"
+    },
+    {
+      text: "digital illustrations",
+      url: "/art#illustrations"
+    },
+    {
+      text: "traditional art",
+      url: "/art#traditional"
     }
 ]
 
@@ -58,7 +74,10 @@ const IndexPage = () => {
                   <p class="text-xs tablet-sm:text-sm md:text-base font-bold text-center text-white mt-3 inline-block">University of Pennsylvania</p>
                 </div>
                 
-                <p class="text-xs tablet-sm:text-sm text-center text-white ">BSE in Digital Media Design <br/> MSE in Computer Graphics <br/> and Game Technology</p>
+                <p class="text-xs tablet-sm:text-sm text-center text-white ">
+                  <a class="text-white hover:text-[#686868]" href="http://cg.cis.upenn.edu/dmd.html">BSE in Digital Media Design </a>
+                  <br/> 
+                  <a class="text-white hover:text-[#686868]" href="https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/">MSE in Computer Graphics <br/> and Game Technology</a></p>
 
                 <div class="mt-6 m-auto flex justify-center md:my-24">
                   <a href="mailto:nicolechau524@gmail.com" target="_blank">
@@ -87,7 +106,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-      <div class="top-[30rem] sm:top-[21rem] mx-10 pb-10 md:left-[500px] min-[1221px]:pr-52 md:top-[20%] absolute md:pr-8">
+      <div class="top-[30rem] sm:top-[21rem] mx-10 pb-10 md:left-[500px] min-[1221px]:pr-52 md:top-[15%] absolute md:pr-8">
         <p class="md:text-xl mb-4 font-bold italic text-charcoal">
             check out some of my work in...
         </p>

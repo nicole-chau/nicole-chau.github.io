@@ -15,7 +15,7 @@ const Art = () => {
     return (
         <div>
             <Navbar/>
-            <h1 class="pt-16 px-48">2D animation</h1>
+            <h1 id="animation" class="pt-16 px-48">2D animation</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={tedxpennCard}
@@ -44,7 +44,7 @@ const Art = () => {
                     </>}/>
             </div>
             
-            <h1 class="pt-16 px-48">3D modeling</h1>
+            <h1 id="modeling" class="pt-16 px-48">3D modeling</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={character}
@@ -56,9 +56,9 @@ const Art = () => {
             </div>
             
             
-            <h1 class="pt-16 px-48">digital illustrations</h1>
+            <h1 id="illustrations" class="pt-16 px-48">digital illustrations</h1>
             
-            <h1 class="pt-16 px-48">traditional art</h1>
+            <h1 id="traditional" class="pt-16 px-48">traditional art</h1>
             <Footer />
         </div>
     )
