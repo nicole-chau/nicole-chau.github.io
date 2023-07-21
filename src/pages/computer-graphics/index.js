@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Card from "../../components/Card";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -23,6 +24,11 @@ import { PBRShadersBody } from "./physically-based-shaders";
 const ComputerGraphics = () => {
     return (
         <div>
+            <Helmet>
+                <title>Nicole Chau - Computer Graphics</title>
+                <meta name="description" content="Nicole Chau Portfolio - Computer Graphics" />
+            </Helmet>
+
             <Navbar/>
             <h1 class="pt-16 px-48">computer graphics</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">

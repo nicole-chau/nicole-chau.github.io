@@ -1,7 +1,8 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import Navbar from "../components/Navbar";
 import Tag from "../components/Tag";
-import profile from "../images/profile.jpg"
+import profile from "../images/profile.png"
 
 const svgStyle = "scale-75 mx-1 tablet-sm:scale-[0.8] md:scale-100 md:mx-2 inline-block hover:scale-110 ease-in-out duration-200";
 
@@ -44,13 +45,18 @@ const creativeSkills = ["Adobe Creative Suite", "Autodesk Maya", "Blender", "Uni
 const IndexPage = () => {
   return (
     <div>
+        <Helmet>
+          <title>Nicole Chau - Portfolio</title>
+          <meta name="description" content="Nicole Chau Portfolio" />
+        </Helmet>
+
         <Navbar/>
         <div class="bg-cover bg-no-repeat h-[70vh] bg-bottom sm:h-[45vh] md:w-[450px] md:h-[100vh] md:bg-right bg-[url('../images/home-mobile.png')] sm:bg-[url('../images/home-tablet.png')] md:bg-[url('../images/home.png')]">
 
           <div class="pt-8 px-2 tablet-sm:px-28 min-[486px]:px-20 min-[436px]:px-16 sm:px-12 md:float-left md:absolute md:top-[16%] md:pl-20">
             <div class="sm:float-left mr-4 md:mr-0 md:clear-both">
               <h1 class="text-lg text-center tablet-sm:text-xl mb-4 md:mb-10 md:text-3xl text-white mx-auto">hey, i'm nicole!</h1>
-              <img src={profile} class="min-w-[7rem] w-28 m-auto rounded-full md:w-40 block" />
+              <img src={profile} alt="profile" class="min-w-[7rem] w-28 m-auto rounded-full md:w-40 block" />
             </div>
 
             <div class="mt-3 sm:mt-1 sm:float-right md:clear-both">
@@ -80,7 +86,7 @@ const IndexPage = () => {
                   <a class="text-white hover:text-[#686868]" href="https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/">MSE in Computer Graphics <br/> and Game Technology</a></p>
 
                 <div class="mt-6 m-auto flex justify-center md:my-24">
-                  <a href="mailto:nicolechau524@gmail.com" target="_blank">
+                  <a href="mailto:nicolechau524@gmail.com" target="_blank" rel="noreferrer">
                     <svg class={svgStyle} width="30" height="30" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.23 269.46">
                       <path fill="#FFFFFF" d="m383.23,241.78c-1.24,2.65-2.48,5.3-3.58,7.66-38.36-38.35-76.7-76.7-114.92-114.92,37.97-37.92,76.31-76.2,114.89-114.71,1.13,2.69,2.38,5.67,3.62,8.64v213.33Z"/>
                       <path fill="#FFFFFF" d="m18.69,2.52C24.63,1.6,29.72.11,34.81.1c103.89-.14,207.78-.14,311.67,0,5.48,0,10.96,1.42,16.44,2.17.19.53.37,1.06.56,1.58-1.29.97-2.71,1.8-3.84,2.92-23.22,23.17-46.44,46.33-69.58,69.59-29.44,29.59-58.91,59.15-88.12,88.97-5.84,5.96-15.61,5.89-21.4.04C127.4,111.69,74.04,58.21,20.74,4.67c-.35-.35-.68-.71-2.05-2.15Z"/>
@@ -89,13 +95,13 @@ const IndexPage = () => {
                     </svg>
                   </a>
 
-                  <a href="https://github.com/nicole-chau" target="_blank">
+                  <a href="https://github.com/nicole-chau" target="_blank" rel="noreferrer">
                     <svg class={svgStyle} width="30" height="30" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217C0 70.973 13.993 89.389 33.405 95.907C35.832 96.397 36.721 94.848 36.721 93.545C36.721 92.404 36.641 88.493 36.641 84.418C23.051 87.352 20.221 78.551 20.221 78.551C18.037 72.847 14.801 71.381 14.801 71.381C10.353 68.366 15.125 68.366 15.125 68.366C20.059 68.692 22.648 73.418 22.648 73.418C27.015 80.914 34.052 78.796 36.883 77.492C37.287 74.314 38.582 72.114 39.957 70.892C29.118 69.751 17.714 65.514 17.714 46.609C17.714 41.231 19.654 36.831 22.728 33.409C22.243 32.187 20.544 27.134 23.214 20.371C23.214 20.371 27.339 19.067 36.64 25.423C40.6221 24.3457 44.7288 23.7976 48.854 23.793C52.979 23.793 57.184 24.364 61.067 25.423C70.369 19.067 74.494 20.371 74.494 20.371C77.164 27.134 75.464 32.187 74.979 33.409C78.134 36.831 79.994 41.231 79.994 46.609C79.994 65.514 68.59 69.669 57.67 70.892C59.45 72.44 60.986 75.373 60.986 80.018C60.986 86.618 60.906 91.915 60.906 93.544C60.906 94.848 61.796 96.397 64.222 95.908C83.634 89.388 97.627 70.973 97.627 49.217C97.707 22 75.788 0 48.854 0Z" fill="#FFFFFF"/>
                     </svg>
                   </a>
 
-                  <a href="https://www.linkedin.com/in/nicole-chau/" target="_blank">
+                  <a href="https://www.linkedin.com/in/nicole-chau/" target="_blank" rel="noreferrer">
                     <svg class={svgStyle} width="30" height="30" viewBox="0 0 409 409" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M-9.76585e-06 375.15V33.52C0.62999 33.39 0.71999 32.92 0.83999 32.38C3.49999 21.2 9.27999 12.38 19.32 6.25C24.08 3.35 29.23 1.87 34.31 0H373.49C373.62 0.64 374.11 0.68 374.65 0.78C383.6 2.4 391.17 6.76 397.36 13.23C405.48 21.72 408.59 32.28 408.59 43.83C408.61 150.88 408.61 257.93 408.55 364.98C408.55 368.88 408.24 372.88 407.34 376.65C405.12 385.98 400.2 393.65 392.55 399.65C385.73 404.99 378.19 408.58 369.56 408.59C259.87 408.69 150.18 408.66 40.48 408.65C26.15 408.65 15.3 402.18 7.00999 390.75C3.54999 385.99 2.16999 380.41 -0.0100098 375.14L-9.76585e-06 375.15ZM224.78 187.63C224.78 180.2 224.63 173.83 224.85 167.48C224.95 164.48 224.3 163.42 221 163.46C203.05 163.64 185.09 163.62 167.14 163.47C164.18 163.45 163.44 164.13 163.44 167.14C163.54 226.07 163.54 284.99 163.44 343.92C163.44 346.75 164.17 347.4 166.94 347.38C184.89 347.25 202.85 347.22 220.8 347.4C224.21 347.43 224.86 346.41 224.85 343.18C224.72 309.39 224.83 275.61 224.73 241.82C224.7 233.86 226.4 226.67 231.4 220.28C238.97 210.61 250.55 207.17 262.1 209.87C277.22 213.4 286.03 226.35 286 242.13C285.94 275.92 286.03 309.7 285.9 343.49C285.89 346.69 286.79 347.41 289.87 347.38C307.82 347.23 325.78 347.21 343.73 347.4C346.91 347.43 347.32 346.4 347.31 343.61C347.19 324.59 347.46 305.56 347.19 286.55C346.9 265.59 348.19 244.62 346.44 223.67C345.78 215.77 343.78 208.34 340.4 201.34C331.83 183.59 318.25 171.05 299.84 163.99C289.84 160.16 279.18 158.07 268.72 159.97C251.07 163.18 235.96 171.44 224.78 187.64V187.63ZM61.36 255.46C61.36 284.71 61.41 313.95 61.29 343.2C61.28 346.34 61.77 347.44 65.27 347.4C83.08 347.19 100.89 347.24 118.7 347.37C121.7 347.39 122.71 346.8 122.71 343.52C122.6 284.76 122.61 226 122.69 167.24C122.69 164.34 122.11 163.43 119.02 163.46C101.08 163.62 83.13 163.62 65.19 163.46C62.12 163.43 61.27 164.15 61.28 167.32C61.41 196.7 61.36 226.08 61.36 255.46ZM91.31 55.87C70.71 54.5 56.03 72.9 54.97 89.59C53.65 110.49 71.62 129.75 92.64 128.66C112.06 127.65 128.36 112.59 128.37 91.97C128.37 73.01 113.62 54.94 91.3 55.87H91.31Z" fill="#FFFFFF"/>
                     </svg>

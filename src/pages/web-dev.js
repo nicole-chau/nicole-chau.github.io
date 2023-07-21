@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -29,6 +30,11 @@ import snowflakeVideo from "../images/web-dev/snowflake-demo.mp4"
 const WebDev = () => {
     return (
         <div>
+            <Helmet>
+                <title>Nicole Chau - Web Dev</title>
+                <meta name="description" content="Nicole Chau Portfolio - Web Dev" />
+            </Helmet>
+
             <Navbar/>
             <h1 class="pt-16 px-48">web dev</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">

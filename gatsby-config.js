@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `portfolio`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Nicole Chau`,
+    description: `Portfolio for Nicole Chau`,
+    image: `src/images/profile.png`,
+    siteUrl: `https://nicole-chau.github.io/`
   },
   plugins: 
   [
@@ -43,7 +45,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png",
+        "icon": "src/images/profile.png",
       }
     }, 
     "gatsby-plugin-mdx", 

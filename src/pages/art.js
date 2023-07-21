@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -43,6 +44,11 @@ import growth from "../images/art/growth.png"
 const Art = () => {
     return (
         <div>
+            <Helmet>
+                <title>Nicole Chau - Art</title>
+                <meta name="description" content="Nicole Chau Portfolio - Art" />
+            </Helmet>
+
             <Navbar/>
             <h1 id="animation" class="pt-16 px-48">2D animation</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
