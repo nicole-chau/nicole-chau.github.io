@@ -50,7 +50,7 @@ const Art = () => {
             </Helmet>
 
             <Navbar/>
-            <h1 id="animation" class="pt-16 px-48">2D animation</h1>
+            <h1 id="animation" class="px-12 pt-16 md:px-48">2D animation</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={tedxpennCard}
@@ -79,7 +79,7 @@ const Art = () => {
                     </>}/>
             </div>
             
-            <h1 id="modeling" class="pt-16 px-48">3D modeling</h1>
+            <h1 id="modeling" class="px-12 pt-8 md:px-48">3D modeling</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={character}
@@ -106,7 +106,7 @@ const Art = () => {
             </div>
             
             
-            <h1 id="illustrations" class="pt-16 px-48">digital illustrations</h1>
+            <h1 id="illustrations" class="px-12 pt-8 md:px-48">digital illustrations</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={catCard}
@@ -135,7 +135,7 @@ const Art = () => {
                     modalImgs={[city]} />
             </div>
             
-            <h1 id="traditional" class="pt-16 px-48">traditional art</h1>
+            <h1 id="traditional" class="px-12 pt-8 md:px-48">traditional art</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={tornCard}

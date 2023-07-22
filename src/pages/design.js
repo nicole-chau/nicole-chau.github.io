@@ -47,7 +47,7 @@ const Design = () => {
             </Helmet>
 
             <Navbar/>
-            <h1 class="pt-16 px-48">design</h1>
+            <h1 class="px-12 pt-16 md:px-48">design</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={pcvCard}

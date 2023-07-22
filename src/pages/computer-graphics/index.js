@@ -30,7 +30,7 @@ const ComputerGraphics = () => {
             </Helmet>
 
             <Navbar/>
-            <h1 class="pt-16 px-48">computer graphics</h1>
+            <h1 class="px-12 pt-16 md:px-48">computer graphics</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
                 <Card
                     image={volumeRenderer}

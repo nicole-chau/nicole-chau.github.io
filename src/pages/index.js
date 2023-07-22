@@ -29,7 +29,7 @@ const IndexPage = () => {
       </Helmet>
 
       <Navbar/>
-      <div class="bg-cover bg-no-repeat h-[68vh] bg-bottom sm:h-[45vh] md:w-[450px] md:h-[100vh] md:bg-right bg-[url('../images/home-mobile.png')] sm:bg-[url('../images/home-tablet.png')] md:bg-[url('../images/home.png')] overflow-hidden">
+      <div class="bg-cover bg-no-repeat h-[66vh] bg-bottom sm:h-[45vh] md:w-[450px] md:h-[100vh] md:bg-right bg-[url('../images/home-mobile.png')] sm:bg-[url('../images/home-tablet.png')] md:bg-[url('../images/home.png')] overflow-hidden">
 
         <div class="pt-8 px-2 tablet-sm:px-28 min-[486px]:px-20 min-[436px]:px-16 sm:px-12 md:float-left md:absolute md:top-[16%] md:pl-20">
           <div class="sm:float-left mr-4 md:mr-0 md:clear-both">
@@ -90,7 +90,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div class="top-[30rem] sm:top-[21rem] mx-8 md:pr-4 pb-10 md:left-[500px] md:top-[12%] absolute md:overflow-auto md:h-[80vh]">
+      <div class="top-[29rem] sm:top-[21rem] mx-8 md:pr-4 pb-10 md:left-[500px] md:top-[12%] absolute md:overflow-auto md:h-[80vh]">
         <p class="text-base md:text-xl mb-4 font-bold italic text-charcoal">
             check out some of my work in...
         </p>
