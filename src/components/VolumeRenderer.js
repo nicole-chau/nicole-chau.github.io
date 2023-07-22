@@ -1,12 +1,8 @@
 import React from "react";
-import Tag from "../../components/Tag";
-import Navbar from "../../components/Navbar";
-import grayscale from "../../images/computer-graphics/volume-renderer-grayscale.png"
-import rgb from "../../images/computer-graphics/volume-renderer-rgb.png"
+import grayscale from "../images/computer-graphics/volume-renderer-grayscale.png"
+import rgb from "../images/computer-graphics/volume-renderer-rgb.png"
 
-const skills = ["C++", "Qt"];
-
-const VolumeRendererBody = () => {
+const VolumeRenderer = () => {
     return (
         <div>
             <h2>Overview</h2>
@@ -17,7 +13,6 @@ const VolumeRendererBody = () => {
             </p>
 
             <h2>Features</h2>
-
             <ul>
                 <li>Load in DICOM dataset (directory containing series of .dcm files)</li>
                 <li>Volumetric rendering of loaded dataset (grayscale by default)</li>
@@ -30,7 +25,6 @@ const VolumeRendererBody = () => {
                 alt="volume renderer for medical imaging"
                 class="w-600 m-auto"
             />
-
             <img 
                 src={rgb}
                 alt="volume renderer for medical imaging"
@@ -42,18 +36,14 @@ const VolumeRendererBody = () => {
             and was uploaded by Mojtaba Masoudi.</p>
 
             <h2>Implementation Overview</h2>
-
             <p>This was implemented using Qt and C++.</p>
 
             <h3>Data Loading and Processing</h3>
-
             <p>The application allows a user to load in a series of DICOM images. Once the directory is selected, the file tags are then parsed to identify the width, height, rescale intercept and rescale slope values. For each file, the raw pixel values are read and converted to Hounsfield units (HU) with the following formula :</p>
-
             <p class="text-center font-serif my-2">HU = pixelValue * rescaleSlope + rescaleIntercept</p>
             <p>Note that Hounsfield units are a relative quantitative measurement of radio density used in CT scans.</p>
 
             <h3>Volume Rendering</h3>
-
             <p>The volume rendering is implemented through a ray-cast approach. For each pixel on the screen, a ray is cast from the camera origin to the pixel and through the voxel data. If the ray intersects the data volume, then the data is sampled along the ray with grid marching. For each sample, the transmittance <p class="font-serif inline">T </p>
             and color <p class="font-serif inline">C</p> is updated based on the density (calculated from Hounsfield unit) and color at the current voxel. If the data is to be rendered using a RGB color map, then voxels with Hounsfield unit values falling within the selected range will be linearly interpolated between five predefined colors (yellow to red) to obtain the voxel color.</p>
 
@@ -62,43 +52,6 @@ const VolumeRendererBody = () => {
                 <li>DCMTK: for loading and processing of DICOM files</li>
                 <li>ctkRangeSlider: for implementing a range slider in Qt</li>
             </ul>
-        </div>
-    )
-}
-
-export { skills, VolumeRendererBody };
-
-const VolumeRenderer = () => {
-    
-
-    return (
-        <div>
-            <Navbar/>
-
-            <div class="py-20 px-80">
-                <div class="float-left inline">
-                    <h1>Volume Renderer for Medical Imaging</h1>
-                    <div class="mb-3 -mt-10">
-                        {skills.map(skill => (<Tag tag={skill}/>))}
-                    </div>
-                </div>
-
-                <div class="float-right inline mt-3">
-                    <p class="text-right">Created in 2023</p>
-                    <a 
-                        href="https://github.com/nicole-chau/volume-renderer" 
-                        class="bg-powder-blue text-white px-2.5 py-1 my-2 inline-block rounded-md hover:bg-slate-gray hover:text-white">
-                            View code
-                    </a>
-                </div>
-
-                <div class="relative pb-[50%] mt-[100px]">
-                    <iframe src="https://player.vimeo.com/video/844289996" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                
-                <VolumeRendererBody/>
-            </div>
-
-                
         </div>
     )
 }

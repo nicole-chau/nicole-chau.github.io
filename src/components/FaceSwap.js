@@ -1,8 +1,6 @@
 import React from "react";
-import Tag from "../../components/Tag";
-import Navbar from "../../components/Navbar";
 
-const FaceSwapBody = () => {
+const FaceSwap = () => {
     return (
         <div>
             <h2>Overview</h2>
@@ -47,42 +45,6 @@ const FaceSwapBody = () => {
                 To blend the source face with the target image more smoothly, the built-in cv2 seamlessClone() function was used to implement gradient domain blending. 
                 This allows us to make the face swap appear more natural by accounting for changes in exposure, lighting, etc.
             </p>
-        </div>
-    )
-}
-
-export { FaceSwapBody };
-
-const FaceSwap = () => {
-    const skills = ["Python"];
-
-    return (
-        <div>
-            <Navbar/>
-
-            <div class="py-20 px-80">
-                <div class="float-left inline">
-                    <h1>Face Swapping in Videos</h1>
-                    <div class="mb-3 -mt-10">
-                        {skills.map(skill => (<Tag tag={skill}/>))}
-                    </div>
-                </div>
-
-                <div class="float-right inline mt-3">
-                    <p class="text-right">Created in 2022</p>
-
-                    <a 
-                        href="https://drive.google.com/file/d/1u_r8S4tTZFnA1SFUXDFhdajp_tIJeyeh/view?usp=sharing" 
-                        class="bg-powder-blue text-white px-2.5 py-1 my-1.5 inline-block rounded-md hover:bg-slate-gray hover:text-white">
-                            View code
-                    </a>
-                </div>
-
-                <div class="relative pb-[50%] mt-[100px]">
-                    <iframe src="https://player.vimeo.com/video/844683590" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="absolute top-0 left-0 w-full h-full" title="Volume Renderer for Medical Imaging"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-                
-            </div>
         </div>
     )
 }
