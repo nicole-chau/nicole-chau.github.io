@@ -4,6 +4,10 @@ import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import antibioticsCard from "../images/art/card-antibiotics.png"
+import antibiotics1 from "../images/art/antibiotics1.png"
+import antibiotics2 from "../images/art/antibiotics2.gif"
+
 import tedxpennCard from "../images/art/card-tedxpenn.png";
 import tedxpennVideo from "../images/art/tedxpenn.mp4";
 
@@ -52,6 +56,16 @@ const Art = () => {
             <Navbar/>
             <h1 id="animation" class="px-12 pt-16 md:px-48">2D animation</h1>
             <div class="flex flex-wrap justify-items-start justify-center mx-8">
+                <Card
+                    image={antibioticsCard}
+                    title="Accessible Antibiotics Video Series" 
+                    skills={["Adobe After Effects", "Adobe Illustrator", "iArtBook"]}
+                    year="2022-2023"
+                    description="In collaboration with medical professionals at Penn Medicine, I animated and created a 
+                    series of twenty 5-10 minute educational videos for a curriculum about antibiotics.
+                    The goal of this curriculum was to make medical education more accessible for students."
+                    modalImgs={[antibiotics2, antibiotics1]}
+                    descriptionFirst={true}/>
                 <Card
                     image={tedxpennCard}
                     title="TEDxPenn Logo Animation" 
