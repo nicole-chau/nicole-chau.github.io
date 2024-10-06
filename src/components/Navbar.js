@@ -3,7 +3,9 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [collapse, setCollapse] = useState(true);
-    const page = window.location.pathname;
+    if (typeof window !== 'undefined') {
+        const page = window.location.pathname;
+    }
     const linkStyle = "block py-1 px-2 font-medium text-sm rounded-lg hover:animate-pop ";
     const paths = {
         "home": "/",
