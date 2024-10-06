@@ -3,10 +3,9 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [collapse, setCollapse] = useState(true);
+    let page = "";
     if (typeof window !== 'undefined') {
-        const page = window.location.pathname;
-    } else {
-        const page = "";
+        page = window.location.pathname;
     }
     const linkStyle = "block py-1 px-2 font-medium text-sm rounded-lg hover:animate-pop ";
     const paths = {
@@ -31,11 +30,11 @@ const Navbar = () => {
                             let activeStyle;
                             let inactiveStyle;
                             if (page === "/") {
-                                activeStyle = " md:max-lg:bg-white-smoke md:max-lg:text-navy bg-navy text-white-smoke";
-                                inactiveStyle = " md:max-lg:text-white-smoke hover:bg-white-smoke md:max-lg:hover:text-navy text-navy";
+                                activeStyle = " md:max-lg:bg-white-smoke md:max-lg:text-navy bg-navy text-white-smoke hover:text-white-smoke";
+                                inactiveStyle = " md:max-lg:text-white-smoke md:max-lg:hover:text-navy md:max-lg:hover:bg-white-smoke hover:bg-navy hover:text-white-smoke text-navy";
                             } else {
-                                activeStyle = "bg-white-smoke text-navy md:bg-navy md:text-white-smoke";
-                                inactiveStyle = "text-white-smoke md:bg-white-smoke md:text-navy md:hover:bg-navy md:hover:text-white-smoke";
+                                activeStyle = " bg-white-smoke text-navy md:bg-navy md:text-white-smoke md:hover:text-white-smoke hover:text-navy";
+                                inactiveStyle = " text-white-smoke md:text-navy md:bg-white-smoke md:hover:bg-navy md:hover:text-white-smoke hover:bg-white-smoke hover:text-navy";
                             }
                             return (
                                 <li>
