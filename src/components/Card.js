@@ -6,9 +6,7 @@ import Tag from "./Tag";
 
 const Card = ({ color, image, title, year, link, skills, subtitle, video, modalImgs, description, descriptionFirst }) => {
     const [showModal, setShowModal] = useState(false);
-
-    console.log({description})
-
+    
     return (
         <div class="">
             <button type="button" class={`${color} rounded w-[280px] h-[200px] lg:w-[350px] lg:h-[250px]`} onClick={() => setShowModal(true)} >

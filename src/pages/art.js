@@ -47,7 +47,7 @@ const Art = () => {
                 <meta name="description" content="Nicole Chau Portfolio - Art" />
             </Helmet>
 
-            <Navbar />
+            <Navbar page="/art/"/>
             <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
 
                 <h1 id="animation" class="pt-16 text-navy">2D animation</h1>

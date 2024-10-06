@@ -35,7 +35,7 @@ const WebDev = () => {
                 <meta name="description" content="Nicole Chau Portfolio - Web Dev" />
             </Helmet>
 
-            <Navbar/>
+            <Navbar page="/web-dev/"/>
             <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
 
             <h1 class="pt-16 text-navy">web dev</h1>
