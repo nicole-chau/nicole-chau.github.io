@@ -29,16 +29,19 @@ import snowflakeVideo from "../images/web-dev/snowflake-demo.mp4"
 
 const WebDev = () => {
     return (
-        <div>
+        <div class="h-min-screen bg-white-smoke">
             <Helmet>
                 <title>Nicole Chau - Web Dev</title>
                 <meta name="description" content="Nicole Chau Portfolio - Web Dev" />
             </Helmet>
 
             <Navbar/>
-            <h1 class="px-12 pt-16 md:px-48">web dev</h1>
-            <div class="flex flex-wrap justify-items-start justify-center mx-8">
+            <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
+
+            <h1 class="pt-16 text-navy">web dev</h1>
+            <div class="flex flex-wrap justify-evenly gap-4 lg:gap-8 mt-10">
                 <Card
+                    color="bg-card-tan"
                     image={minder}
                     title="Tinder for Movies" 
                     skills={["React", "Node.js", "Express", "MySQL"]}
@@ -52,6 +55,7 @@ const WebDev = () => {
                         This project was completed in collaboration with three other people."
                     descriptionFirst={true}/>
                 <Card
+                    color="bg-card-blue"
                     image={pcvIdeathon}
                     title="Penn Climate Ventures Ideathon Website" 
                     skills={["React"]}
@@ -62,6 +66,7 @@ const WebDev = () => {
                         here</a>.</>}
                     modalImgs={[home, schedule, faq]}/>
                 <Card
+                    color="bg-card-pink"
                     image={imageEditor}
                     title="Collaborative Image Editor" 
                     skills={["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"]}
@@ -75,6 +80,7 @@ const WebDev = () => {
                     Jimp was used to support the image editing functions."
                     descriptionFirst={true}/>
                 <Card
+                    color="bg-card-pink"
                     image={snowflakeCard}
                     title="Snowflake Generator" 
                     skills={["Python"]}
@@ -114,6 +120,7 @@ const WebDev = () => {
                             </p>
                         </>
                     }/>
+            </div>
             </div>
             <Footer />
         </div>

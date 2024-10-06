@@ -8,26 +8,23 @@ module.exports = {
     extend: {
       width: {
         '600': '600px',
-       }
+       },
     },
     fontFamily: {
       'sans': ['Open Sans', 'ui-sans-serif', 'system-ui'],
       'serif': ['Times New Roman', 'ui-serif', 'system-ui']
     },
     colors: {
-      'white': '#FFFFFF',
-      'black': '#000000',
-      'powder-blue': '#A0C0D9',
-      'dark-tan': '#E3D5CA',
-      'slate-gray': '#6E86A1',
-      'charcoal': '#465260',
-      'gray': '#CCCCCC'
-    },
-    screens: {
-      'sm': '426px',
-      'md': '769px',
-      'lg': '1025px',
-      'tablet-sm': '656px'
+      'gray': '#9D9B96',
+      'navy': '#243671',
+      'white-smoke': '#FFFDF9',
+      'card-blue': '#E2E4F3',
+      'card-pink': '#FFE6D9',
+      'card-tan': '#FFF5E9',
+      'periwinkle': '#A9ADDB',
+      'maroon': '#895159',
+      'salmon': '#DFAEA1',
+      'transparent': 'transparent',
     },
   },
   plugins: [],

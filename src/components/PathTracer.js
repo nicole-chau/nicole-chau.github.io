@@ -1,5 +1,5 @@
 import React from "react";
-import custom1 from "../images/computer-graphics/path-tracer1.png"
+import custom1 from "../images/computer-graphics/path-tracer.png"
 
 const PathTracer = () => {
     return (
