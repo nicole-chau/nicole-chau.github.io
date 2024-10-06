@@ -28,7 +28,7 @@ const ComputerGraphics = () => {
                 <meta name="description" content="Nicole Chau Portfolio - Computer Graphics" />
             </Helmet>
 
-            <Navbar />
+            <Navbar page="/computer-graphics/"/>
             <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
             <h1 class="pt-16 text-navy">computer graphics</h1>
             <div class="flex flex-wrap justify-evenly gap-4 lg:gap-8 mt-10">

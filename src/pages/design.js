@@ -42,7 +42,7 @@ const Design = () => {
                 <meta name="description" content="Nicole Chau Portfolio - Design" />
             </Helmet>
 
-            <Navbar/>
+            <Navbar page="/design/"/>
             <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
 
             <h1 class="pt-16 text-navy">design</h1>

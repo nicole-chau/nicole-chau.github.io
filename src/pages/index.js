@@ -18,7 +18,7 @@ const IndexPage = () => {
         <meta name="description" content="Nicole Chau Portfolio" />
       </Helmet>
 
-      <Navbar />
+      <Navbar page="/"/>
 
       <div class="grid auto-rows-min lg:grid-cols-3">
         <Profile />
