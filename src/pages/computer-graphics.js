@@ -6,13 +6,13 @@ import Footer from "../components/Footer";
 
 import volumeRenderer from "../images/computer-graphics/volume-renderer.png";
 import pathTracer from "../images/computer-graphics/path-tracer.png";
-import faceSwap from "../images/computer-graphics/face-swap.png";
+import faceSwap from "../images/computer-graphics/face-swap.gif";
 import meshEditor from "../images/computer-graphics/mesh-editor.png";
-import gpuPathTracer from "../images/computer-graphics/gpu-path-tracer.png";
-import beatTheIllusion from "../images/computer-graphics/beat-the-illusion.png";
+import gpuPathTracer from "../images/computer-graphics/gpu-path-tracer.gif";
+import beatTheIllusion from "../images/computer-graphics/beat-the-illusion.png"; 
 import beatTheIllusionVideo from "../images/computer-graphics/beat-the-illusion.mp4";
 import pbrShaders from "../images/computer-graphics/pbr-shaders.png";
-import shaderCards from "../images/computer-graphics/card-opengl-shaders.png";
+import shaderCards from "../images/computer-graphics/opengl-shaders.png";
 import shaderVideo from "../images/computer-graphics/opengl-shaders.mp4";
 
 import VolumeRenderer from "../components/VolumeRenderer";
@@ -22,16 +22,18 @@ import FaceSwap from "../components/FaceSwap";
 
 const ComputerGraphics = () => {
     return (
-        <div>
+        <div class="h-min-screen bg-white-smoke">
             <Helmet>
                 <title>Nicole Chau - Computer Graphics</title>
                 <meta name="description" content="Nicole Chau Portfolio - Computer Graphics" />
             </Helmet>
 
-            <Navbar/>
-            <h1 class="px-12 pt-16 md:px-48">computer graphics</h1>
-            <div class="flex flex-wrap justify-items-start justify-center mx-8">
+            <Navbar />
+            <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
+            <h1 class="pt-16 text-navy">computer graphics</h1>
+            <div class="flex flex-wrap justify-evenly gap-4 lg:gap-8 mt-10">
                 <Card
+                    color="bg-card-blue"
                     image={volumeRenderer}
                     title="Volume Renderer for Medical Imaging" 
                     skills={["C++", "Qt"]}
@@ -41,12 +43,14 @@ const ComputerGraphics = () => {
                     description={<VolumeRenderer/>}
                     />
                 <Card
+                    color="bg-card-pink"
                     image={pathTracer}
                     title="Monte Carlo Path Tracer" 
                     skills={["C++", "Qt"]}
                     year="2022"
                     description={<PathTracer/>}/>
                 <Card 
+                    color="bg-card-tan"
                     image={gpuPathTracer}
                     title="GPU-based Path Tracer" 
                     skills={["OpenGL", "Qt"]}
@@ -54,6 +58,7 @@ const ComputerGraphics = () => {
                     video="https://player.vimeo.com/video/844805583"
                     description={<GPUPathTracer/>}/>
                 <Card 
+                    color="bg-card-tan"
                     image={faceSwap}
                     title="Face Swapping in Videos" 
                     skills={["Python"]}
@@ -62,6 +67,7 @@ const ComputerGraphics = () => {
                     video="https://player.vimeo.com/video/844683590"
                     description={<FaceSwap/>}/>
                 <Card 
+                    color="bg-card-blue"
                     image={beatTheIllusion}
                     title="'Beat the Illusion' Game" 
                     skills={["Unreal", "C++"]}
@@ -89,6 +95,7 @@ const ComputerGraphics = () => {
                     </>}
                     />
                 <Card 
+                    color="bg-card-pink"
                     image={meshEditor}
                     title="Mini 3D Mesh Editor" 
                     skills={["C++", "Qt"]}
@@ -115,6 +122,7 @@ const ComputerGraphics = () => {
                         </div>}
                     />
                 <Card 
+                    color="bg-card-tan"
                     image={pbrShaders}
                     title="Physically-Based Shaders" 
                     skills={["OpenGL", "Qt"]}
@@ -141,6 +149,7 @@ const ComputerGraphics = () => {
                         </div>}
                     />
                 <Card 
+                    color="bg-card-blue"
                     image={shaderCards}
                     title="OpenGL Shaders" 
                     skills={["OpenGL", "Qt"]}
@@ -176,6 +185,7 @@ const ComputerGraphics = () => {
                         </p>
                     </>}
                     />
+            </div>
             </div>
 
             <Footer />

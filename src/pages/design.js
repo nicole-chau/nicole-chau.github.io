@@ -4,9 +4,7 @@ import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import pcvCard from "../images/design/card-pcv.png"
 import pcv from "../images/design/pcv-logo.png"
-import ideathonCard from "../images/design/card-pcv-ideathon.png"
 import generalCard from "../images/design/card-pcv-general.png"
 import ideathon from "../images/design/pcv-ideathon.jpg"
 import general from "../images/design/pcv-home.jpg"
@@ -27,10 +25,8 @@ import pennappsPlatyCard from "../images/design/card-pennapps-platy.png"
 import pennappsPlatyTriangle from "../images/design/platy-triangle.png"
 import pennappsPlatyLeaves from "../images/design/platy-leaves.png"
 
-import mtLogoCard from "../images/design/card-mt-logo.png"
 import mtLogo from "../images/design/mt-logo.png"
 
-import personalCard from "../images/design/card-personal.png"
 import personal from "../images/design/personal-art.jpg"
 
 import k4kCard from "../images/design/card-k4k.png"
@@ -40,23 +36,27 @@ import k4kSpread from "../images/design/k4k-spread-bg.png"
 const Design = () => {
 
     return (
-        <div>
+        <div class="h-min-screen bg-white-smoke">
             <Helmet>
                 <title>Nicole Chau - Design</title>
                 <meta name="description" content="Nicole Chau Portfolio - Design" />
             </Helmet>
 
             <Navbar/>
-            <h1 class="px-12 pt-16 md:px-48">design</h1>
-            <div class="flex flex-wrap justify-items-start justify-center mx-8">
+            <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
+
+            <h1 class="pt-16 text-navy">design</h1>
+            <div class="flex flex-wrap justify-evenly gap-4 lg:gap-8 mt-10">
                 <Card
-                    image={pcvCard}
+                    color="bg-card-tan"
+                    image={pcv}
                     title="Penn Climate Ventures Logo Design" 
                     skills={["Adobe Illustrator"]}
                     year="2022"
                     subtitle="Designed as the Head of Design for Penn Climate Ventures."
                     modalImgs={[pcv]}/>
                 <Card
+                    color="bg-card-pink"
                     image={generalCard}
                     title="Penn Climate Ventures General Website Design"           
                     skills={["Figma"]}
@@ -65,7 +65,8 @@ const Design = () => {
                         here</a>.</>}
                     modalImgs={[general, about, people, fellowships]}/>
                 <Card
-                    image={ideathonCard}
+                    color="bg-card-blue"
+                    image={ideathon}
                     title="Penn Climate Ventures Ideathon Website Design" 
                     skills={["Figma"]}
                     year="2021"
@@ -74,6 +75,7 @@ const Design = () => {
                         here</a>.</>}
                     modalImgs={[ideathon]}/>
                 <Card
+                    color="bg-card-pink"
                     image={pennappsLogoCard}
                     title="PennApps Logo and Banner Designs" 
                     skills={["Adobe Illustrator"]}
@@ -81,6 +83,7 @@ const Design = () => {
                     subtitle="Logo and banner designs for various iterations of the University of Pennsylvania's collegiate hackathon, each corresponding to a different theme (cloud, spring, sustainability). Designed as part of the PennApps creative team."
                     modalImgs={[pennappsCloud, pennappsSpring, pennappsSustainability]}/>
                 <Card
+                    color="bg-card-blue"
                     image={pennappsPlatyCard}
                     title="PennApps Mascot Designs" 
                     skills={["Adobe Illustrator"]}
@@ -88,18 +91,21 @@ const Design = () => {
                     subtitle="Designed variations of the PennApps mascot to match the current iteration's theme (music, sustainability)."
                     modalImgs={[pennappsPlatyTriangle, pennappsPlatyLeaves]}/>
                 <Card
+                    color="bg-card-tan"
                     image={voiCard}
                     title="'Village of Idiots' Poster and Program Design" 
                     skills={["Adobe Illustrator", "Adobe Indesign"]}
                     year="2018"
                     modalImgs={[voiPoster, voiProgram]}/>
                 <Card
-                    image={mtLogoCard}
+                    color="bg-card-blue"
+                    image={mtLogo}
                     title="Media Team Logo Design" 
                     skills={["Adobe Illustrator"]}
                     year="2018"
                     modalImgs={[mtLogo]}/>
                 <Card
+                    color="bg-card-pink"
                     image={k4kCard}
                     title="Kids4Kids Code+Create Brochure Design" 
                     subtitle="Brochure design for the Code+Create program hosted by NGO Kids4Kids."
@@ -107,14 +113,15 @@ const Design = () => {
                     skills={["Adobe Illustrator", "Adobe Indesign"]}
                     modalImgs={[k4kCovers, k4kSpread]}/>
                 <Card
-                    image={personalCard}
+                    color="bg-card-tan"
+                    image={personal}
                     title="Abstract Designs" 
                     subtitle="Personal artwork exploring abstract designs."
                     skills={["Adobe Illustrator"]}
                     year="2020"
                     description={<img src={personal} alt="cat drawing" class="px-8 m-auto clear-both"/>}/>
             </div>
-
+        </div>
             <Footer />
         </div>
     )
