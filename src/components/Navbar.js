@@ -5,6 +5,8 @@ const Navbar = () => {
     const [collapse, setCollapse] = useState(true);
     if (typeof window !== 'undefined') {
         const page = window.location.pathname;
+    } else {
+        const page = "";
     }
     const linkStyle = "block py-1 px-2 font-medium text-sm rounded-lg hover:animate-pop ";
     const paths = {
