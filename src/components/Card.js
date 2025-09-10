@@ -13,7 +13,7 @@ const Card = ({ color, image, title, year, link, skills, subtitle, video, modalI
                 <img src={image} class="max-w-[250px] max-h-[165px] lg:max-w-[290px] lg:max-h-[210px] m-auto ease-in-out duration-200 hover:scale-[1.02] hover:drop-shadow-[0px_0px_8px_rgba(0,0,0,0.4)]"/>
             </button>
             
-            <p class="text-md text-black text-wrap max-w-[280px] lg:max-w-[360px] font-medium hover:text-black text-center mt-2">{title}</p>
+            <p class="text-wrap max-w-[280px] lg:max-w-[360px] font-medium text-center mt-2">{title}</p>
             
 
             {showModal
@@ -23,8 +23,8 @@ const Card = ({ color, image, title, year, link, skills, subtitle, video, modalI
                         <button type="button" class="text-xl md:text-2xl text-charcoal float-right relative -right-3 -top-5" onClick={() => setShowModal(false)}>×</button>
                         
                         <div class="md:float-left inline w-[80%]">
-                            <p class="font-bold text-xl">{title}</p>
-                            <p class="text-sm">{subtitle}</p>
+                            <h1>{title}</h1>
+                            {subtitle && <p class="text-m">{subtitle}</p>}
                             <div class="md:mb-3">
                                 {skills.map(skill => (<Tag tag={skill}/>))}
                             </div>

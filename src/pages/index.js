@@ -16,55 +16,41 @@ const IndexPage = () => {
       <Helmet>
         <title>Nicole Chau - Portfolio</title>
         <meta name="description" content="Nicole Chau Portfolio" />
+        <link rel="stylesheet" href="https://use.typekit.net/xvs8jwx.css"/>      
       </Helmet>
-
       <Navbar page="/"/>
 
       <div class="grid auto-rows-min lg:grid-cols-3">
         <Profile />
 
-        <div class="row-span-2 lg:col-span-2 flex flex-col justify-evenly px-12 lg:px-28 pb-10 pt-8 lg:pt-32">
-          <div>
-            <h2 class="mb-4">
-              check out some of my work in...
-            </h2>
+        <div class="row-span-2 lg:col-span-2 flex flex-col justify-start px-12 lg:px-20 pb-10 pt-4 lg:pt-20">
+          <div class="mb-4">
+            <h1 class="mb-4">
+              My Work
+            </h1>
 
-            <div class="flex flex-wrap justify-items-start justify-center gap-4">
+            <div class="flex flex-wrap justify-items-start justify-center gap-8">
               <HomeCard
                 color="bg-card-blue"
                 image={computerGraphics}
-                title="computer graphics"
+                title="Computer Graphics"
                 page="/computer-graphics" />
               <HomeCard
                 color="bg-card-tan"
                 image={webDev}
-                title="web dev"
+                title="Web Dev"
                 page="/web-dev" />
               <HomeCard
                 color="bg-card-pink"
                 image={design}
-                title="design"
+                title="Design"
                 page="/design" />
               <HomeCard
                 color="bg-card-tan"
                 image={art}
-                title="art"
+                title="Art"
                 page="/art"
-                description="2D animation, 3D modeling, digital illustrations" />
-              {/* <HomeCard
-                color="bg-card-pink"
-                image={modeling}
-                title="3D Modeling"
-                page="/art#modeling" />
-              <HomeCard
-                color="bg-card-blue"
-                image={illustrations}
-                title="Digital Illustrations"
-                page="/art#illustrations" /> */}
-              {/* <HomeCard
-              image={traditional}
-              title="Traditional Art" 
-  page="/art#traditional"/> */}
+                description="2D Animation, 3D Modeling, Digital Illustrations" />
             </div>
           </div>
 

@@ -8,8 +8,8 @@ const Profile = () => {
     return (
         <div class="pb-8 sm:pb-12 lg:sticky lg:top-0 lg:col-span-1 lg:h-screen bg-navy lg:overflow-hidden">
             <div class="flex flex-col sm:flex-row content-center lg:flex-col justify-evenly lg:justify-center lg:h-[100vh] mt-12 sm:mt-20 lg:mt-0">
-                <div class="">
-                    <h1 class="text-lg sm:text-2xl lg:text-3xl text-center mb-6 lg:mb-8 text-white-smoke">hi, i'm nicole!</h1>
+                <div>
+                    <h1 class="text-lg sm:text-2xl lg:text-3xl text-center mb-6 lg:mb-8 text-white-smoke">hi, i'm nicole</h1>
                     <img src={profile} alt="profile" class="min-w-[7rem] m-auto rounded-full w-28 sm:w-36 lg:w-40 block" />
                 </div>
 
@@ -35,9 +35,9 @@ const Profile = () => {
                         </div>
 
                         <p class="text-xs text-center text-white-smoke ">
-                            <a class="text-white-smoke hover:text-periwinkle" href="http://cg.cis.upenn.edu/dmd.html">BSE in Digital Media Design </a>
+                            <a class="text-white-smoke hover:text-card-blue" href="http://cg.cis.upenn.edu/dmd.html">BSE in Digital Media Design </a>
                             <br />
-                            <a class="text-white-smoke hover:text-periwinkle" href="https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/">MSE in Computer Graphics <br /> and Game Technology</a></p>
+                            <a class="text-white-smoke hover:text-card-blue" href="https://www.cis.upenn.edu/graduate/program-offerings/mse-in-computer-graphics-and-game-technology/">MSE in Computer Graphics <br /> and Game Technology</a></p>
 
                         <div class="mt-4 sm:mt-8 lg:mt-6 m-auto flex justify-center">
                             <a href="mailto:nicolechau524@gmail.com" target="_blank" rel="noreferrer">
