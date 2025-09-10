@@ -5,11 +5,11 @@ const Navbar = ({ page }) => {
     const [collapse, setCollapse] = useState(true);
     const linkStyle = "block py-1 px-2 font-medium text-sm rounded-lg hover:animate-pop ";
     const paths = {
-        "home": "/",
-        "computer graphics": "/computer-graphics/",
-        "web dev": "/web-dev/",
-        "design": "/design/",
-        "art": "/art/",
+        "Home": "/",
+        "Computer Graphics": "/computer-graphics/",
+        "Web Dev": "/web-dev/",
+        "Design": "/design/",
+        "Art": "/art/",
     }
 
     return (
