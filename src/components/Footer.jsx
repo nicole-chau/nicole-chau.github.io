@@ -4,7 +4,7 @@ const svgStyle = "mx-3 inline-block hover:scale-110 ease-in-out duration-200 fil
 
 const Footer = () => {
   return (
-    <div class="m-auto pt-8 pb-6 bg-white-smoke fixed bottom-0 w-full">
+    <footer class="mt-auto pt-8 pb-6 bg-white-smoke w-full">
       <div class="flex justify-center">
         <a href="mailto:nicolechau524@gmail.com" target="_blank">
           <svg class={svgStyle} width="25" height="25" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.23 269.46">
@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
 
       <p class="text-xs block text-center mt-4 text-navy">&copy; 2024 Nicole Chau</p>
-    </div>
+    </footer>
   )
 }
 

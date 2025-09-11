@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
 import Navbar from "../components/Navbar";
-import HomeCard from "../components/HomeCard";
+import HomeCard from "../components/home/HomeCard";
 import Profile from "../components/home/Profile";
 import Skills from "../components/home/Skills";
 
