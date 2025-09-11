@@ -41,17 +41,16 @@ import growth from "../images/art/growth.png"
 
 const Art = () => {
     return (
-        <div class="h-min-screen bg-white-smoke">
+        <div class="min-h-screen bg-white-smoke">
             <Helmet>
                 <title>Nicole Chau - Art</title>
                 <meta name="description" content="Nicole Chau Portfolio - Art" />
             </Helmet>
 
-            <Navbar page="/art/"/>
-            <div class="w-4/5 lg:min-w-3/5 m-auto h-min-screen">
-
+            <Navbar page="/art/" />
+            <div class="w-4/5 lg:min-w-3/5 m-auto 2xl:max-w-[1280px]">
                 <h1 id="animation" class="pt-16 text-navy">2D animation</h1>
-                <div class="flex flex-wrap justify-evenly gap-4 lg:gap-8 mt-10">
+                <div class="flex flex-wrap justify-around gap-4 lg:gap-8 mt-10">
                     <Card
                         color="bg-card-tan"
                         image={antibioticsCard}

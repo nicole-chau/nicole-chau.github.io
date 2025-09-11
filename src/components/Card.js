@@ -9,8 +9,8 @@ const Card = ({ color, image, title, year, link, skills, subtitle, video, modalI
     
     return (
         <div class="">
-            <button type="button" class={`${color} rounded w-[280px] h-[200px] lg:w-[350px] lg:h-[250px]`} onClick={() => setShowModal(true)} >
-                <img src={image} class="max-w-[250px] max-h-[165px] lg:max-w-[290px] lg:max-h-[210px] m-auto ease-in-out duration-200 hover:scale-[1.02] hover:drop-shadow-[0px_0px_8px_rgba(0,0,0,0.4)]"/>
+            <button type="button" class={`${color} rounded w-[250px] h-[160px] md:w-[280px] md:h-[200px] lg:w-[350px] lg:h-[250px]`} onClick={() => setShowModal(true)} >
+                <img src={image} class="max-w-[220px] max-h-[125px] md:max-w-[250px] md:max-h-[165px] lg:max-w-[290px] lg:max-h-[210px] m-auto ease-in-out duration-200 hover:scale-[1.02] hover:drop-shadow-[0px_0px_8px_rgba(0,0,0,0.4)]"/>
             </button>
             
             <p class="text-wrap max-w-[280px] lg:max-w-[360px] font-medium text-center mt-2">{title}</p>
