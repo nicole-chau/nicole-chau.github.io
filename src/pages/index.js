@@ -12,7 +12,7 @@ import art from "../images/art.png"
 
 const IndexPage = () => {
   return (
-    <div class="h-min-screen bg-white-smoke">
+    <div class="min-h-screen bg-white-smoke">
       <Helmet>
         <title>Nicole Chau - Portfolio</title>
         <meta name="description" content="Nicole Chau Portfolio" />
@@ -23,9 +23,9 @@ const IndexPage = () => {
       <div class="grid auto-rows-min lg:grid-cols-3">
         <Profile />
 
-        <div class="row-span-2 lg:col-span-2 flex flex-col justify-start px-12 lg:px-20 pb-10 pt-4 lg:pt-20">
-          <div class="mb-4">
-            <h1 class="mb-4">
+        <div class="row-span-2 lg:col-span-2 flex flex-col justify-start px-12 lg:px-20 pb-10 pt-4 lg:pt-20 2xl:px-40">
+          <div class="mb-4 2xl:mb-24">
+            <h1 class="mb-4 2xl:mb-8">
               My Work
             </h1>
 

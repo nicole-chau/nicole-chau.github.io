@@ -8,9 +8,9 @@ const Skills = () => {
     const creativeSkills = ["Adobe Creative Suite", "Autodesk Maya", "Blender", "Unity", "Unreal", "Houdini", "ZBrush", "Figma", "Toon Boom Harmony"]
 
     return (
-        <div class="grid gap-2 sm:grid-cols-2 sm:gap-4 mt-6">
-            <div class="">
-                <h1 class="sm:mb-4">
+        <div class="grid gap-2 sm:grid-cols-2 sm:gap-4 mt-6 2xl:gap-8">
+            <div>
+                <h1 class="sm:mb-4 2xl:mb-8">
                     technical skills
                 </h1>
                 {technicalSkills.map(skill => (
@@ -18,8 +18,8 @@ const Skills = () => {
                 ))}
             </div>
 
-            <div class="">
-                <h1 class="sm:mb-4">
+            <div>
+                <h1 class="sm:mb-4 2xl:mb-8">
                     creative skills
                 </h1>
                 {creativeSkills.map(skill => (

@@ -22,7 +22,7 @@
     p {
         @apply text-sm md:text-base font-sans
     }
-  }
+}
 
 @tailwind components;
 @tailwind utilities;
